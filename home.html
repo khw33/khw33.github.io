@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$.html</title>
+    <link rel="stylesheet" href="new.css">
+    <style>
+        #project, #memo {
+            background-color: rgba(11, 125, 194);
+            border-radius: 20px;
+            width: 80%; height: 50%;
+            margin: 30px;
+            padding: 30px;
+            transition-property: background-color;
+            transition-duration: 3s;
+        }
+
+        #project:hover {
+            background-color: rgb(0, 176, 145);
+        }
+
+        #memo:hover {
+            background-color: rgb(176, 0, 145);
+        }
+
+        textarea {
+            background-color: aliceblue;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>91914377</h1><br>
+        <nav>
+            <ul id="topMenu">
+                <li><a href="$.html"><span class="place">$</span></a></li>
+                <li><a href="Fav.html">Favorites</a></li>
+                <li><a href="new.html">Main</a></li>
+            </ul>
+        </nav>
+        </header>
+        <aside>
+            <button onclick="showM()" id="ShowHide" >
+                Show/Hide
+            </button>
+            <div id="project">
+                프로젝트 링크: https://yoochan1012.github.io/Project_y/new_pro.html
+                <img src="https://user-images.githubusercontent.com/82464095/120883701-ac2c5280-c619-11eb-85ff-6871a6b0285b.png" width=70%>
+            </div>
+        </aside>
+        <article>
+            <button onclick="showN()" id="ShowHide" >
+                Show/Hide
+            </button>
+            <div id="memo">
+                <textarea>
+
+                </textarea>
+            </div>
+        </article>
+        <footer id="f_link">
+
+        </footer>
+        <script>
+        function showM() {
+            var v = document.getElementById("project");
+                if (v.style.display === 'none') {
+                    document.getElementById("project").style.display = "block";
+                } else {
+                    document.getElementById("project").style.display = "none";
+                }
+            }
+
+        function showN() {
+        var w = document.getElementById("memo");
+            if (w.style.display === 'none') {
+                document.getElementById("memo").style.display = "block";
+            } else {
+                document.getElementById("memo").style.display = "none";
+            }
+        }
+        </script>
+</body>
+</html>
