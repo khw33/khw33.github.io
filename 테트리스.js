@@ -18,9 +18,9 @@ function 칸만들기(){
 	tetris.appendChild(fragment);
 }
 
-window.addEventListener('keydown',function(e){ //키보드에 따른 코드값 확인 가능, IE 에서 다를 수 있음! ** keydown 은 꾹 누르고 있는 상황에 계속 호출이 됨, keypress 는 방향기는 안먹고 키보드만 먹음!
+window.addEventListener('keydown',function(e){ 
 	console.log(e);
-	switch(e.code){ // 조건이 하나의 변수 값을 대상으로 하는 경우 if 말고 switch를 쓸 수 있다.
+	switch(e.code){ 
 		case 'ArrowLeft' :
 			console.log("왼쪽");
 			break;
@@ -29,7 +29,7 @@ window.addEventListener('keydown',function(e){ //키보드에 따른 코드값 �
 			break;
 		case 'ArrowDown' :
 			break;	
-		default : // else 기능!
+		default : 
 			break;
 	}
 });
